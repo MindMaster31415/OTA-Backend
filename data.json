@@ -64,6 +64,28 @@
 			"explore": 9,
 			"vibe": 1,
 			"coordinates": "33.756380, -84.373200"
-		}
+		},
+		{
+			"id": 6,
+			"name": "SkyLounge",
+			"address": "110 Marietta St NW, Atlanta, GA 30303",
+			"thrill": 2,
+			"active": 1,
+			"engage": 1,
+			"explore": 1,
+			"vibe": 10,
+			"coordinates": "33.7647985,-84.399137"
+		},
+		{
+			"id": 7,
+			"name": "Atlanta Event Center at Opera",
+			"address": "1150 B Peachtree Street Northeast, Atlanta, GA 30309",
+			"thrill": 3,
+			"active": 2,
+			"engage": 1,
+			"explore": 1,
+			"vibe": 9,
+			"coordinates": "33.7797052,-84.3975886"
+		},
 	]
 }
