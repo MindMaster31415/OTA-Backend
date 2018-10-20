@@ -139,3 +139,17 @@ def bin_chunk_cleaner(query):
             break
     final = query[index:]
     return final
+
+def sort_data(query):
+    dummy, final = [], []
+    for item in query:
+        dummy.append((item ['duration'], item ['id']))
+    dummy.sort()
+    for (duration, dummy_id) in dummy:
+        final.append(get_data(query, dummy_id))
+    return final
+
+def get_data(query, dummy_id):
+    for item in query:
+        if item ['id'] == dummy_id:
+            return item

@@ -18,7 +18,12 @@ def caller(gps_coordinates):
             'address': data ['address'],
             'coordinates': ('(' + data ['coordinates'] + ')'),
             'distance': element ['distance'] ['value'],
-            'duration': element ['duration'] ['value']
+            'duration': element ['duration'] ['value'],
+            'thrill': data ['thrill'],
+            'active': data ['active'],
+            'engage': data ['engage'],
+            'explore': data ['explore'],
+            'vibe': data ['vibe']
             }
                               )
     output = json.dumps(final)
