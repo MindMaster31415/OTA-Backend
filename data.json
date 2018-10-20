@@ -86,6 +86,83 @@
 			"explore": 1,
 			"vibe": 9,
 			"coordinates": "33.7797052,-84.3975886"
-		}
+		},
+		{
+			"id": 8,
+			"name": "Six Flags over Georgia",
+			"address": "275 Riverside Parkway Southwest, Austell, GA 30168",
+			"thrill": 9,
+			"active": 8,
+			"engage": 2,
+			"explore": 4,
+			"vibe": 5,
+			"coordinates": "33.7706408,-84.5537133"
+		},
+		{
+			"id": 9,
+			"name": "Netherworld Haunted House",
+			"address": "2076 W Park Pl. Blvd, Stone Mountain, GA 30087",
+			"thrill": 10,
+			"active": 6,
+			"engage": 2,
+			"explore": 1,
+			"vibe": 1,
+			"coordinates": "33.81865,-84.1209467"
+		},
+		{
+			"id": 10,
+			"name": "Northside Trail",
+			"address": "Northside Beltline Trail, Atlanta, GA 30318",
+			"thrill": 6,
+			"active": 10,
+			"engage": 2,
+			"explore": 7,
+			"vibe": 1,
+			"coordinates": "33.8082021,-84.4046813"
+		},
+		{
+			"id": 11,
+			"name": "Piedmont Park",
+			"address": "400 Park Dr NE, Atlanta, GA 30306",
+			"thrill": 5,
+			"active": 10,
+			"engage": 3,
+			"explore": 6,
+			"vibe": 1,
+			"coordinates": "33.7850856,-84.3759917"
+		},
+		{
+			"id": 13,
+			"name": "Privé Atlanta",
+			"address": "960 Spring St NW, Atlanta, GA 30309",
+			"thrill": 2,
+			"active": 5,
+			"engage": 1,
+			"explore": 2,
+			"vibe": 9,
+			"coordinates": "33.7808127,-84.3914743"
+		},
+		{
+			"id": 14,
+			"name": "Wild Adventures",
+			"address": "3766 Old Clyattville Rd, Valdosta, GA 31601",
+			"thrill": 9,
+			"active": 7,
+			"engage": 3,
+			"explore": 4,
+			"vibe": 5,
+			"coordinates": "30.7193266,-83.3246434"
+		},
+		{
+			"id": 15,
+			"name": "Tanyard Creek Park",
+			"address": "73 28th St NW, Atlanta, GA 30309",
+			"thrill": 3,
+			"active": 9,
+			"engage": 1,
+			"explore": 7,
+			"vibe": 1,
+			"coordinates": "33.8082021,-84.4046813"
+		},
 	]
 }
