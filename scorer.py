@@ -37,7 +37,7 @@ def get_preference_score(user_preference, current_data):
     ''' Gets score of all the locations '''
     data = current_data ['rows']
     for item in data:
-        item ['preference_score'] = 100 - ((abs(item ['thrill'] - user_preference[0]) + abs(item ['active'] - user_preference[1]) + abs(item ['engage'] - user_preference[2]) + abs(item ['explore'] - user_preference[3]) + abs(item ['vibe'] - user_preference[4])) * 2)
+        item ['preference_score'] = 100 - ((abs(int(item ['thrill']) - int(user_preference[0])) + abs(int(item ['active']) - int(user_preference[1])) + abs(int(item ['engage']) - int(user_preference[2])) + abs(int(item ['explore']) - int(user_preference[3])) + abs(int(item ['vibe']) - int(user_preference[4]))) * 2)
     return current_data
 
 def master_scorer(gps_coordinates, user_preference):

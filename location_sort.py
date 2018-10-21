@@ -9,6 +9,7 @@ app = flask.Flask(__name__)
 def sorter():
     ''' Tester: algorithm_num = 0, gps_coordinates = '33.7773, -84.3962', user_preference = [8, 5, 6, 9, 5]'''
     request_json = flask.request.get_json()
+##    return json.dumps(request_json)
     algorithm_num = request_json['algorithm_num']
     gps_coordinates = request_json['gps_coordinates']
     user_preference = request_json['user_preference']
