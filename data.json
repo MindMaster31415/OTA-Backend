@@ -1,8 +1,9 @@
-{
+﻿{
 	"rows": [ {
 			"id": 0,
 			"name": "Georgia Aquarium",
 			"address": "225 Baker Street, Atlanta, GA 30313",
+			"status": "Indoors",
 			"thrill": 5,
 			"active": 4,
 			"engage": 9,
@@ -14,6 +15,7 @@
 			"id": 1,
 			"name": "World of Coca-Cola",
 			"address": "121 Baker Street NW, Atlanta, GA 30313",
+			"status": "Indoors",
 			"thrill": 3,
 			"active": 4,
 			"engage": 8,
@@ -68,7 +70,6 @@
 			"explore": 9,
 			"vibe": 1,
 			"coordinates": "33.756380, -84.373200"
-<<<<<<< HEAD
 		},
 		{
 			"id": 6,
@@ -177,8 +178,6 @@
 			"explore": 7,
 			"vibe": 1,
 			"coordinates": "33.8082021,-84.4046813"
-=======
->>>>>>> a723ca098dedd84fcef4a19e8fd89f94715fcf41
 		}
 	]
 }
