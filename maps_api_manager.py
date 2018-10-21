@@ -3,7 +3,6 @@ import data_importer
 import maps_distance_api
 import data_getter
 import json
-import pprint
 
 def caller(gps_coordinates):
     maps_data = data_getter.get_data_maps_api(gps_coordinates)
@@ -18,7 +17,12 @@ def caller(gps_coordinates):
             'address': data ['address'],
             'coordinates': ('(' + data ['coordinates'] + ')'),
             'distance': element ['distance'] ['value'],
-            'duration': element ['duration'] ['value']
+            'duration': element ['duration'] ['value'],
+            'thrill': data ['thrill'],
+            'active': data ['active'],
+            'engage': data ['engage'],
+            'explore': data ['explore'],
+            'vibe': data ['vibe']
             }
                               )
     output = json.dumps(final)
