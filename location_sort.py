@@ -1,6 +1,17 @@
 import scorer
+import flask
+import requests
+import json
 
-def sorter(algorithm_num, gps_coordinates, user_preference):
+app = flask.Flask(__name__)
+
+@app.route('/sorter', methods = ['GET', 'POST'])
+def sorter():
+    ''' Tester: algorithm_num = 0, gps_coordinates = '33.7773, -84.3962', user_preference = [8, 5, 6, 9, 5]'''
+    request_json = flask.request.get_json()
+    algorithm_num = request_json['algorithm_num']
+    gps_coordinates = request_json['gps_coordinates']
+    user_preference = request_json['user_preference']
     data = scorer.master_scorer(gps_coordinates, user_preference)
     if algorithm_num == 0:
         output = sort_0(data)
@@ -10,7 +21,7 @@ def sorter(algorithm_num, gps_coordinates, user_preference):
         output = sort_2(data)
     elif algorithm_num == 3:
         output = sort_3(data)
-    return output
+    return json.dumps(output)
 
 def sort_0(raw_data):
     return(overall_sort(scorer.final_scorer((1/3), (1/3), (1/3), raw_data)))
@@ -36,3 +47,12 @@ def overall_sort(raw_data):
                 break
     output = {'rows': final}
     return output
+
+#data = json.load(open('data.json'))
+
+@app.route('/tester', methods = ['GET'])
+def tester():
+    return 'Hello World'
+
+if __name__ == '__main__':
+    app.run(host = '127.0.0.1', port = 8080, debug = True)

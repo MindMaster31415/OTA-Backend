@@ -3,7 +3,6 @@ import data_importer
 import maps_distance_api
 import data_getter
 import json
-import pprint
 
 def caller(gps_coordinates):
     maps_data = data_getter.get_data_maps_api(gps_coordinates)
